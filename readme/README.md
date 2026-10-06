@@ -1,24 +1,36 @@
-# 🌐 Janmejoy Mahato – Portfolio Website
+# 🌐 Ankush Mittal – Portfolio Website
 
-A modern, high-tech, and interactive personal portfolio website built with **HTML, CSS, and JavaScript**.  
-It showcases my skills, education, projects, certifications, and contact details.
+A modern Next.js portfolio for Ankush Mittal, showcasing software engineering experience, projects, skills, certifications, and contact details tailored to the resume.
 
 -----
 
 ## ✨ Features
-- ⚡ Animated Hero Section with particle effects  
-- 🌙 Light/Dark Mode Toggle  
-- 📑 Resume Preview Modal + Download Option  
-- 📚 Timeline-style Education Section  
-- 🛠️ Interactive Skills & Projects Cards  
-- 📬 Contact Form with EmailJS Integration (optional)  
-- 📊 Visitor Counter (via CountAPI)  
-- 📈 Scroll Progress Bar  
-- 🎨 Glassmorphism Design + Smooth Animations  
+- ⚡ Animated hero and motion-driven portfolio experience
+- 🌙 Theme toggle and immersive dark-mode design
+- 📚 Experience, education, projects, and case study sections
+- 🛠️ Interactive skills and certificate cards
+- 📬 Contact and hiring information
+- 📈 Smooth scroll and rich UI polish
+- 🎨 High-tech cyber-themed visual system
 
 ---
 
-## 🚀 Deployment
-1. Clone the repository:
+## 🚀 Local Development
+1. Install dependencies:
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   npm install
+   ```
+2. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+3. Open the local portfolio in your browser.
+
+---
+
+## 🧩 Stack
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion

@@ -19,7 +19,7 @@ export default function GitHubStatsCard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   // Kept apart from `stats` so the fallback link still works when the fetch fails.
-  const [username, setUsername] = useState("janmej0y");
+  const [username, setUsername] = useState("ankushmittal552");
 
   useEffect(() => {
     let mounted = true;

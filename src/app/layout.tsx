@@ -47,22 +47,22 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://janmej0y.vercel.app"),
-  title: "Janmejoy Mahato | Portfolio",
-  description: "Minimal designer-style portfolio of Janmejoy Mahato.",
+  metadataBase: new URL("https://ankushmittal.dev"),
+  title: "Ankush Mittal | Portfolio",
+  description: "Portfolio of Ankush Mittal, a full-stack engineer focused on Java, cloud systems, and secure product development.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Janmejoy Mahato | Portfolio",
-    description: "Full stack developer",
-    url: "https://janmej0y.vercel.app",
-    siteName: "Janmejoy Portfolio",
-    images: [{ url: "/assets/profile.jpg", width: 1200, height: 630, alt: "Janmejoy Mahato" }],
+    title: "Ankush Mittal | Portfolio",
+    description: "Full-stack developer and cloud-focused engineer.",
+    url: "https://ankushmittal.dev",
+    siteName: "Ankush Mittal Portfolio",
+    images: [{ url: "/assets/profile.jpg", width: 1200, height: 630, alt: "Ankush Mittal" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Janmejoy Mahato | Portfolio",
-    description: "Full stack developer and security-minded engineer.",
+    title: "Ankush Mittal | Portfolio",
+    description: "Full-stack developer and security-minded engineer.",
     images: ["/assets/profile.jpg"],
   },
 };
@@ -71,15 +71,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Janmejoy Mahato",
-    url: "https://janmej0y.vercel.app",
+    name: "Ankush Mittal",
+    url: "https://ankushmittal.dev",
     jobTitle: "Full Stack Developer",
     sameAs: [
-      "https://github.com/janmej0y",
-      "https://linkedin.com/in/janmej0y",
-      "https://instagram.com/janmej0y",
+      "https://github.com/ankushmittal552",
+      "https://www.linkedin.com/in/ankush-mittal-552",
     ],
-    knowsAbout: ["Web Development", "Cybersecurity", "Next.js", "Node.js", "TypeScript"],
+    knowsAbout: ["Java", "Web Development", "Cybersecurity", "AWS", "Full-Stack Engineering"],
   };
 
   const workJsonLd = {
@@ -96,7 +95,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         position: index + 1,
         name: item.title,
         description,
-        url: url || "https://janmej0y.vercel.app",
+        url: url || "https://ankushmittal.dev",
       };
     }),
   };

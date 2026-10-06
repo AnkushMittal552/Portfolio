@@ -3,7 +3,7 @@
 import { motion, useInView, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { CSSProperties, MouseEvent, useMemo, useRef } from "react";
-import { EDUCATION_ITEMS, EXPERIENCE_ITEMS } from "@/lib/data";
+import { EDUCATION_ITEMS, EXPERIENCE_ITEMS, PROJECT_COUNT_LABEL } from "@/lib/data";
 import { DURATIONS, EASE_STANDARD, STAGGER } from "@/lib/motion";
 import ScrambleText from "@/components/ScrambleText";
 import StaggerHeading from "@/components/StaggerHeading";
@@ -265,7 +265,7 @@ export default function About() {
                   <div className="absolute inset-0 z-10 bg-[linear-gradient(135deg,rgba(255,255,255,0.22),transparent_30%,transparent_70%,rgba(34,211,238,0.2))]" />
                   <Image
                     src="/assets/profile.webp"
-                    alt="Janmejoy Mahato portrait"
+                    alt="Ankush Mittal portrait"
                     width={560}
                     height={760}
                     className="h-full w-full object-cover"
@@ -280,33 +280,36 @@ export default function About() {
             <div className="mt-4">
               <StaggerHeading
                 as="h3"
-                text="Security-first by habit."
+                text="About Me"
                 className="text-3xl font-semibold tracking-tight md:text-4xl"
               />
             </div>
             <p className="mt-5 max-w-3xl text-base leading-7 text-[#9ca3af]">
-              Final-year CS student building full-stack products, then hardening them for real use.
+              I’m Ankush Mittal, a Computer Science student at VIT Vellore passionate about turning ideas into reliable software. My experience spans full-stack development, AI-assisted applications, and secure system design, including projects like a Java Order Matching Engine and a full-stack library platform.
+            </p>
+            <p className="mt-4 max-w-3xl text-base leading-7 text-[#9ca3af]">
+              I enjoy solving real-world engineering problems and building products that balance performance, security, and usability.
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
               <div className="rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3">
                 <p className="text-xs uppercase tracking-[0.14em] text-white/50">Experience</p>
-                <p className="mt-1 text-lg font-semibold text-white/90">3+ Years</p>
+                <p className="mt-1 text-lg font-semibold text-white/90">Intern + Builds</p>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3">
                 <p className="text-xs uppercase tracking-[0.14em] text-white/50">Projects</p>
-                <p className="mt-1 text-lg font-semibold text-white/90">12+ Shipped</p>
+                <p className="mt-1 text-lg font-semibold text-white/90">{PROJECT_COUNT_LABEL} Projects</p>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3">
                 <p className="text-xs uppercase tracking-[0.14em] text-white/50">Focus</p>
-                <p className="mt-1 text-lg font-semibold text-white/90">Security + UX</p>
+                <p className="mt-1 text-lg font-semibold text-white/90">Software Development</p>
               </div>
             </div>
             <div className="mt-6 flex flex-wrap gap-2">
               {[
-                "Full Stack Development",
-                "Cybersecurity",
-                "React + Next.js",
-                "Node + API Design",
+                "Full Stack Engineering",
+                "Java + JavaScript",
+                "AI-Assisted Products",
+                "Secure Systems",
               ].map((tag) => (
                 <span key={tag} className="interactive-lift rounded-full border border-white/15 px-3 py-1 text-xs text-white/70">
                   {tag}

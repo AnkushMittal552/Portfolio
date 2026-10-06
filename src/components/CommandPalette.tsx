@@ -70,13 +70,13 @@ export default function CommandPalette() {
         id: "github",
         label: "Open GitHub",
         hint: "External",
-        run: () => window.open("https://github.com/janmej0y", "_blank", "noopener,noreferrer"),
+        run: () => window.open("https://github.com/ankushmittal552", "_blank", "noopener,noreferrer"),
       },
       {
         id: "linkedin",
         label: "Open LinkedIn",
         hint: "External",
-        run: () => window.open("https://linkedin.com/in/janmej0y", "_blank", "noopener,noreferrer"),
+        run: () => window.open("https://www.linkedin.com/in/ankush-mittal-552", "_blank", "noopener,noreferrer"),
       },
       {
         id: "theme-dark",

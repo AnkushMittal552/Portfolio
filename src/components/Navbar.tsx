@@ -190,9 +190,9 @@ export default function Navbar() {
         <a
           href={sectionHref("hero")}
           className="portfolio-wordmark pointer-events-auto inline-flex min-w-0 shrink-0 items-center gap-2.5"
-          aria-label="Janmejoy - home"
+          aria-label="Ankush - home"
         >
-          {/* Logomark: an open gradient ring with the J sitting inside it, so
+          {/* Logomark: an open gradient ring with the A sitting inside it, so
               the colour lives in the mark and the name stays clean white. */}
           <span className="wordmark-mark" aria-hidden="true">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +234,7 @@ export default function Navbar() {
 
               <path
                 className="wordmark-letter"
-                d="M30 14v13.5a6.5 6.5 0 0 1-11.1 4.6"
+                d="M15 31 L24 13 L33 31 M18 25 H30"
                 stroke="url(#jm-letter)"
                 strokeWidth="4"
                 strokeLinecap="round"
@@ -247,8 +247,8 @@ export default function Navbar() {
           </span>
 
           <span className="wordmark-text">
-            <span className="max-[380px]:hidden">Janmejoy</span>
-            <span className="hidden max-[380px]:inline">JM</span>
+            <span className="max-[380px]:hidden">Ankush</span>
+            <span className="hidden max-[380px]:inline">AM</span>
             <span className="wordmark-dot" aria-hidden="true">.</span>
           </span>
         </a>

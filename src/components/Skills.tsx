@@ -10,7 +10,7 @@ import type { Certification, CertificationField, Skill, SkillGroup } from "@/typ
 import { DURATIONS, EASE_STANDARD, STAGGER } from "@/lib/motion";
 
 const DRIVE_LINK =
-  "https://drive.google.com/drive/folders/173A6iPtgXG45KZc-uIHhHH7TXdQageUscgHL5Y2F8uKxgTbS4l8FsH8CAUsvCoI5Lpg4ooKH";
+  "https://drive.google.com/drive/folders/1EH3DDsJMEkf8B6mowh2qs0QQcHsztMg-?usp=sharing";
 
 function levelLabel(level: number) {
   if (level >= 88) return "Expert";
@@ -265,12 +265,12 @@ export default function Skills() {
             className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between"
           >
             <div className="max-w-2xl">
-              <p className="eyebrow-hand"><span className="eyebrow-hand-underline">Arsenal</span></p>
+              <p className="eyebrow-hand"><span className="eyebrow-hand-underline">Stack</span></p>
               <h2 className="display-title mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
-                Pixels to packets
+                From code to cloud
               </h2>
               <p className="mt-4 text-sm leading-7 text-white/70">
-                Pick a layer to see what I use and how deep it runs.
+                I build with Java, JavaScript, React, Node.js, Express, REST APIs, MongoDB, MySQL, and AWS to create secure, scalable, full-stack products.
               </p>
             </div>
 

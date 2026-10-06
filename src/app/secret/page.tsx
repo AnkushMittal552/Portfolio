@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import SecretRoomClient from "@/app/secret/SecretRoomClient";
 
 export const metadata: Metadata = {
-  title: "Secret Room | Janmejoy Mahato",
+  title: "Secret Room | Ankush Mittal",
   description: "Private showcase and analytics dashboard.",
   alternates: { canonical: "/secret" },
   robots: {

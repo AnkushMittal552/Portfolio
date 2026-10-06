@@ -5,11 +5,11 @@ import { CSSProperties, MouseEvent, useMemo, useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 import GitHubStatsCard from "@/components/GitHubStatsCard";
 import MagneticButton from "@/components/MagneticButton";
-import { EXPERIENCE_ITEMS, PROJECTS, SKILL_GROUPS } from "@/lib/data";
+import { EXPERIENCE_ITEMS, LIVE_PROJECT_COUNT, PROJECT_COUNT_LABEL, SKILL_GROUPS } from "@/lib/data";
 import { DURATIONS, EASE_STANDARD } from "@/lib/motion";
 
 /** Rendered per letter so the name can rise into place on load. */
-const NAME = "JANMEJOY";
+const NAME = "ANKUSH";
 
 /** One accent per stat tile, so the bento row carries colour of its own. */
 const HERO_STAT_ACCENTS = ["34 211 238", "45 212 191", "167 139 250", "251 146 60"];
@@ -44,8 +44,8 @@ export default function Hero() {
   const heroStats = useMemo(() => {
     const tools = SKILL_GROUPS.reduce((sum, group) => sum + group.items.length, 0);
     return [
-      { value: String(PROJECTS.length), label: "Projects" },
-      { value: String(PROJECTS.filter((project) => project.liveUrl).length), label: "Live" },
+      { value: PROJECT_COUNT_LABEL, label: "Projects" },
+      { value: String(LIVE_PROJECT_COUNT), label: "Live" },
       { value: String(tools), label: "Tools" },
       { value: String(EXPERIENCE_ITEMS.length), label: "Internships" },
     ];
@@ -118,7 +118,7 @@ export default function Hero() {
               </span>
             </span>
             <span className="hero-locale text-[10px] font-semibold uppercase tracking-[0.18em] sm:text-[11px]">
-              Kolkata, India
+              Haryana, India
             </span>
           </motion.div>
 

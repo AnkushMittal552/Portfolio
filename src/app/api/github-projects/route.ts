@@ -10,7 +10,7 @@ import {
 const REVALIDATE_SECONDS = 3600;
 
 export async function GET() {
-  const username = process.env.GITHUB_USERNAME || "janmej0y";
+  const username = process.env.GITHUB_USERNAME || "ankushmittal552";
 
   try {
     const token = process.env.GITHUB_TOKEN;

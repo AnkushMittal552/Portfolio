@@ -166,7 +166,7 @@ export default function PlayfulFooterItems() {
     }
     alertAudioRef.current.currentTime = 0;
     alertAudioRef.current.play().catch(() => {
-      const fallback = new Audio("/assets/gameover.mp3");
+      const fallback = new Audio("/assets/movesound.mp3");
       fallback.loop = true;
       fallback.volume = 0.72;
       fallback.play()

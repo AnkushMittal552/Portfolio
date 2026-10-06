@@ -125,17 +125,17 @@ export default function SecretRoomClient() {
         </div>
 
         <button
-          onClick={() => openVideo("/assets/videos/video1.mp4")}
+          onClick={() => openVideo("/assets/projects/voice.webp")}
           className="mt-8 block w-full overflow-hidden rounded-xl border border-cyan-300"
         >
-          <Image src="/assets/projects/voting.png" alt="Secret video 1 preview" width={800} height={450} className="h-56 w-full object-cover" />
+          <Image src="/assets/projects/voice.webp" alt="Secret video 1 preview" width={800} height={450} className="h-56 w-full object-cover" />
         </button>
 
         <button
-          onClick={() => openVideo("/assets/videos/video2.mp4")}
+          onClick={() => openVideo("/assets/projects/renthub.webp")}
           className="mt-5 block w-full overflow-hidden rounded-xl border border-cyan-300"
         >
-          <Image src="/assets/projects/RentHub.png" alt="Secret video 2 preview" width={800} height={450} className="h-56 w-full object-cover" />
+          <Image src="/assets/projects/renthub.webp" alt="Secret video 2 preview" width={800} height={450} className="h-56 w-full object-cover" />
         </button>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

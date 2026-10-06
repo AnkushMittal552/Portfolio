@@ -7,7 +7,7 @@ import { createPortal } from "react-dom";
 import StaggerHeading from "@/components/StaggerHeading";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { useSpotlight } from "@/hooks/useSpotlight";
-import { PROJECTS } from "@/lib/data";
+import { LIVE_PROJECT_COUNT, PROJECT_COUNT_LABEL, PROJECTS } from "@/lib/data";
 import { mergeProjects, type SyncedProject } from "@/lib/github-projects";
 import { DURATIONS, EASE_STANDARD } from "@/lib/motion";
 import type { Project, ProjectCategory } from "@/types/portfolio";
@@ -484,8 +484,6 @@ export default function Projects() {
     };
   }, [selectedKey]);
 
-  const liveCount = visible.filter((item) => item.liveUrl).length;
-
   const modal =
     mounted && typeof document !== "undefined"
       ? createPortal(
@@ -640,7 +638,7 @@ export default function Projects() {
               className="display-title text-gradient text-gradient-shimmer mt-3 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl"
             />
             <p className="mt-4 max-w-xl text-sm leading-7 text-white/60">
-              {allProjects.length} projects, {liveCount} live. Open any card for the full breakdown.
+              {PROJECT_COUNT_LABEL} projects, {LIVE_PROJECT_COUNT} live. Open any card for the full breakdown.
             </p>
           </div>
 

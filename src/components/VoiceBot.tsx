@@ -59,7 +59,7 @@ export default function VoiceBot() {
     {
       id: "welcome",
       role: "assistant",
-      text: "I am JanBot. Ask me anything about Janmejoy's projects, skills, education, or contact details.",
+      text: "I am Ankush AI. Ask me anything about Ankush Mittal's projects, skills, education, or contact details.",
     },
   ]);
   const scrollerRef = useRef<HTMLDivElement | null>(null);
@@ -191,7 +191,7 @@ export default function VoiceBot() {
       const reply =
         response.ok && data.success && data.reply
           ? data.reply
-          : data.message || "JanBot is reloading its humor engine. Try again in a moment.";
+          : data.message || "Ankush AI is reloading its wit engine. Try again in a moment.";
 
       setMessages((prev) => {
         const assistantReply: ChatMessage = { id: `a-${Date.now()}`, role: "assistant", text: reply };
@@ -201,7 +201,7 @@ export default function VoiceBot() {
       });
       speakReply(reply);
     } catch {
-      const fallback = "Network glitch. JanBot tripped over a cable, but your portfolio details are still legendary.";
+      const fallback = "Network glitch. Ankush AI tripped over a cable, but your portfolio details are still legendary.";
       setMessages((prev) => {
         const fallbackReply: ChatMessage = { id: `a-${Date.now()}`, role: "assistant", text: fallback };
         const withFallback = [...prev, fallbackReply];
@@ -305,7 +305,7 @@ export default function VoiceBot() {
           <div className="flex flex-wrap items-center gap-2 border-b border-white/10 bg-black/25 px-3 py-2.5 sm:flex-nowrap sm:gap-3">
             <Image
               src="/assets/voice-bot.png"
-              alt="JanBot assistant"
+              alt="Ankush AI assistant"
               width={40}
               height={40}
               className="h-10 w-10 rounded-full border border-cyan-300/40 bg-black/35 p-1"
@@ -403,7 +403,7 @@ export default function VoiceBot() {
               <input
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
-                placeholder="Ask something about Janmejoy..."
+                placeholder="Ask something about Ankush..."
                 className="h-10 w-full rounded-full border border-white/15 bg-black/35 px-3 text-xs text-white outline-none placeholder:text-white/45 focus:border-cyan-300/45"
                 aria-label="Ask portfolio chatbot"
                 disabled={sending}
@@ -422,7 +422,7 @@ export default function VoiceBot() {
         <motion.button
           type="button"
           onClick={() => setOpen(true)}
-          aria-label="Open JanBot"
+          aria-label="Open Ankush AI"
           className={`janbot-launcher pointer-events-auto ml-auto flex items-center gap-3 rounded-2xl border border-cyan-300/25 bg-black/30 px-3 py-2 shadow-[0_10px_24px_rgba(2,6,23,0.24)] backdrop-blur-sm transition-opacity ${
             isScrolling ? "opacity-55" : "opacity-95"
           }`}
@@ -432,13 +432,13 @@ export default function VoiceBot() {
         >
           <Image
             src="/assets/voice-bot.png"
-            alt="JanBot assistant"
+            alt="Ankush AI assistant"
             width={48}
             height={48}
             className="h-12 w-12 rounded-full border border-cyan-300/40 bg-black/35 p-1"
           />
           <div className="text-left">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/90">Open JanBot</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-200/90">Open Ankush AI</p>
             <p className="text-[11px] text-white/60">Tap to unlock chat and voice</p>
           </div>
         </motion.button>

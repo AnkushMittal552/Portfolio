@@ -1,4 +1,4 @@
-# 🚀 Janmejoy Portfolio (Next.js)
+# 🚀 Ankush Mittal Portfolio (Next.js)
 
 A modern, interactive portfolio built with **Next.js 14 + TypeScript + Tailwind CSS**.
 
@@ -101,7 +101,7 @@ Deploy on Vercel (recommended):
 4. Deploy
 
 ## 👨‍💻 Author
-- **Janmejoy Mahato**
-- 📧 `janmejoymahato529@gmail.com`
-- 🔗 [LinkedIn](https://linkedin.com/in/janmej0y)
-- 🐙 [GitHub](https://github.com/janmej0y)
+- **Ankush Mittal**
+- 📧 `ankushmittal552@gmail.com`
+- 🔗 [LinkedIn](https://www.linkedin.com/in/ankush-mittal-552)
+- 🐙 [GitHub](https://github.com/ankushmittal552)

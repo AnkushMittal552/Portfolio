@@ -100,8 +100,8 @@ export type TrustMetric = {
   note?: string;
 };
 
-export type Testimonial = {
-  name: string;
-  role: string;
-  quote: string;
+export type EngineeringPrinciple = {
+  title: string;
+  context: string;
+  description: string;
 };

@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TESTIMONIALS, TRUST_METRICS } from "@/lib/data";
+import { ENGINEERING_APPROACH, TRUST_METRICS } from "@/lib/data";
 import { DURATIONS, EASE_STANDARD, STAGGER } from "@/lib/motion";
 
-export default function TestimonialsTrust() {
+export default function EngineeringHighlights() {
   return (
-    <section id="trust" className="section-backplate a section-wrap px-5 sm:px-6 md:px-12">
+    <section id="engineering-approach" className="section-backplate a section-wrap px-5 sm:px-6 md:px-12">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,13 +17,13 @@ export default function TestimonialsTrust() {
         >
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <p className="text-xs uppercase tracking-[0.2em] text-white/45">Trust Signals</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-white/45">Ankush Mittal</p>
               <h2 className="display-title mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                Proof of the work
+                Engineering at a glance
               </h2>
             </div>
             <p className="max-w-md text-sm leading-6 text-white/60">
-              Delivery volume, internships, and feedback from people who saw it up close.
+              A snapshot of my projects, experience, and focus as a software engineer.
             </p>
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -38,19 +38,18 @@ export default function TestimonialsTrust() {
         </motion.div>
 
         <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {TESTIMONIALS.map((item, index) => (
+          {ENGINEERING_APPROACH.map((item, index) => (
             <motion.article
-              key={item.name + item.role}
+              key={item.title}
               initial={{ opacity: 0, y: 22 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: index * STAGGER.card, duration: DURATIONS.base, ease: EASE_STANDARD }}
               className="surface rounded-[24px] p-5"
             >
-              <p className="text-[11px] uppercase tracking-[0.18em] text-white/55">Trusted Feedback</p>
-              <p className="mt-4 text-sm leading-7 text-white/85">"{item.quote}"</p>
-              <p className="mt-4 text-sm font-semibold">{item.name}</p>
-              <p className="text-xs uppercase tracking-[0.14em] text-white/55">{item.role}</p>
+              <p className="text-[11px] uppercase tracking-[0.18em] text-white/55">{item.context}</p>
+              <p className="mt-4 text-sm font-semibold">{item.title}</p>
+              <p className="mt-2 text-sm leading-7 text-white/75">{item.description}</p>
             </motion.article>
           ))}
         </div>

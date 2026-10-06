@@ -121,7 +121,7 @@ export default function PageLoader() {
       {mounted ? (
         <motion.div
           role="status"
-          aria-label="Loading Janmejoy's portfolio"
+          aria-label="Loading Ankush's portfolio"
           className="portfolio-loader fixed inset-0 z-[220] overflow-hidden bg-black"
           initial={{ opacity: 1 }}
           exit={{ y: "-100%" }}
@@ -143,11 +143,11 @@ export default function PageLoader() {
                   transition={{ duration: 0.7, ease: EASE }}
                   className="loader-fallback-mark font-display"
                 >
-                  J
+                  A
                 </motion.span>
               </div>
             ) : (
-              <ParticleMark glyph="J" progressRef={progressRef} burstRef={burstRef} onUnsupported={onUnsupported} />
+              <ParticleMark glyph="A" progressRef={progressRef} burstRef={burstRef} onUnsupported={onUnsupported} />
             )}
           </div>
 
@@ -160,7 +160,7 @@ export default function PageLoader() {
                 transition={{ duration: 0.7, ease: EASE }}
                 className="loader-wordmark font-display"
               >
-                JANMEJOY MAHATO
+                ANKUSH MITTAL
               </motion.p>
             </div>
 
@@ -171,7 +171,7 @@ export default function PageLoader() {
                 transition={{ duration: 0.7, ease: EASE, delay: 0.08 }}
                 className="loader-subtitle"
               >
-                Full Stack Developer · Cybersecurity
+                Full Stack Developer · Java & Cloud Systems
               </motion.p>
             </div>
 

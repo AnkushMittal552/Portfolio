@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import HomePageClient from "@/components/HomePageClient";
 
 export const metadata: Metadata = {
-  title: "Janmejoy Mahato | Full Stack Developer Portfolio",
+  title: "Ankush Mittal | Full Stack Developer Portfolio",
   description:
-    "Premium portfolio of Janmejoy Mahato showcasing full-stack projects, cybersecurity work, and engineering case studies.",
+    "Portfolio of Ankush Mittal showcasing Java, full-stack engineering, cloud, and AI-assisted product work.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Janmejoy Mahato | Full Stack Developer Portfolio",
+    title: "Ankush Mittal | Full Stack Developer Portfolio",
     description:
-      "Explore projects, case studies, and security-focused product work by Janmejoy Mahato.",
+      "Explore Java systems, full-stack applications, and cloud-focused engineering work by Ankush Mittal.",
     url: "/",
-    images: [{ url: "/assets/profile.jpg", width: 1200, height: 630, alt: "Janmejoy Mahato Portfolio" }],
+    images: [{ url: "/assets/profile.jpg", width: 1200, height: 630, alt: "Ankush Mittal Portfolio" }],
   },
 };
 

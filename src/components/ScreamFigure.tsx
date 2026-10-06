@@ -5,16 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import { DURATIONS, EASE_STANDARD } from "@/lib/motion";
 
 const SCREAM_MS = 3000;
-const MOVABLE_MS = 3000;
 const BUBBLE_MS = 2200;
 
 export default function ScreamFigure() {
   const [isScreaming, setIsScreaming] = useState(false);
-  const [isMovable, setIsMovable] = useState(false);
   const [showBubble, setShowBubble] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const screamTimerRef = useRef<number | null>(null);
-  const movableTimerRef = useRef<number | null>(null);
   const bubbleTimerRef = useRef<number | null>(null);
 
   const stopScream = () => {
@@ -32,21 +29,15 @@ export default function ScreamFigure() {
   useEffect(() => {
     return () => {
       stopScream();
-      if (movableTimerRef.current) window.clearTimeout(movableTimerRef.current);
       if (bubbleTimerRef.current) window.clearTimeout(bubbleTimerRef.current);
     };
   }, []);
 
   const triggerTouchEffects = () => {
-    setIsMovable(true);
     setShowBubble(true);
 
-    if (movableTimerRef.current) window.clearTimeout(movableTimerRef.current);
     if (bubbleTimerRef.current) window.clearTimeout(bubbleTimerRef.current);
 
-    movableTimerRef.current = window.setTimeout(() => {
-      setIsMovable(false);
-    }, MOVABLE_MS);
     bubbleTimerRef.current = window.setTimeout(() => {
       setShowBubble(false);
     }, BUBBLE_MS);
@@ -86,8 +77,9 @@ export default function ScreamFigure() {
         type="button"
         onClick={onClick}
         onPointerDown={triggerTouchEffects}
-        drag={isMovable}
+        drag
         dragMomentum={false}
+        data-cursor="Drag"
         aria-label="Trigger scream animation"
         aria-disabled={isScreaming}
         animate={
@@ -104,7 +96,7 @@ export default function ScreamFigure() {
             ? { duration: 0.32, repeat: Infinity, ease: "linear" }
             : { duration: DURATIONS.base, ease: EASE_STANDARD }
         }
-        className="h-20 w-20 touch-none rounded-2xl border border-white/20 bg-black/55 p-2 backdrop-blur-xl md:h-24 md:w-24"
+        className="h-20 w-20 cursor-grab touch-none rounded-2xl border border-white/20 bg-black/55 p-2 backdrop-blur-xl active:cursor-grabbing md:h-24 md:w-24"
       >
         <svg viewBox="0 0 120 120" className="h-full w-full" aria-hidden="true">
           <circle cx="60" cy="24" r="11" fill="#fff" />

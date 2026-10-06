@@ -15,6 +15,7 @@ const About = dynamic(() => import("@/components/About"));
 const Projects = dynamic(() => import("@/components/Projects"));
 const Skills = dynamic(() => import("@/components/Skills"));
 const Contact = dynamic(() => import("@/components/Contact"));
+const EngineeringHighlights = dynamic(() => import("@/components/EngineeringHighlights"));
 
 export default function HomePageClient() {
   return (
@@ -32,6 +33,8 @@ export default function HomePageClient() {
         <About />
         <SectionDivider />
         <Projects />
+        <SectionDivider />
+        <EngineeringHighlights />
         <SectionDivider />
         <Skills />
         <SectionDivider />
