@@ -36,7 +36,7 @@ export const EDUCATION_ITEMS: EducationItem[] = [
   {
     degree: "B.Tech in Computer Science and Engineering",
     institute: "Vellore Institute of Technology, Vellore",
-    year: "2022 - 2026",
+    year: "2023 - 2027",
     score: "CGPA: 8.81/10",
   },
 ];

@@ -41,7 +41,7 @@ const RUNWAY_PALETTES = [
   { accent: "129 140 248", accentAlt: "56 189 248" }, // indigo -> sky
 ];
 
-/** Leading 4-digit year from strings like "2022 - 2026" or "Mar 2026 - May 2026". */
+/** Leading 4-digit year from strings like "2023 - 2027" or "Mar 2026 - May 2026". */
 function startYear(period: string): number {
   const match = period.match(/(\d{4})/);
   return match ? Number(match[1]) : 0;
