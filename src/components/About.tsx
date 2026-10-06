@@ -47,6 +47,12 @@ function startYear(period: string): number {
   return match ? Number(match[1]) : 0;
 }
 
+/** Final 4-digit year in a range such as "2023 - 2027" or a single-year value. */
+function endYear(period: string): number {
+  const matches = [...period.matchAll(/(\d{4})/g)].map((match) => Number(match[1]));
+  return matches.length ? matches[matches.length - 1] : 0;
+}
+
 /** Pulls a chartable number out of "CGPA: 7.37/10" or "Percentage: 85.60%". */
 function scoreFromLabel(label: string): number | undefined {
   const outOf = label.match(/([\d.]+)\s*\/\s*([\d.]+)/);
@@ -214,7 +220,7 @@ export default function About() {
       status: "Completed",
       description: item.description,
       tags: item.skills,
-      yearLabel: String(startYear(item.period)),
+      yearLabel: String(endYear(item.period)),
       sortYear: startYear(item.period),
     }));
 
@@ -227,7 +233,7 @@ export default function About() {
       period: item.year,
       status: item.score,
       tags: [],
-      yearLabel: String(startYear(item.year)),
+      yearLabel: String(endYear(item.year)),
       score: scoreFromLabel(item.score),
       sortYear: startYear(item.year),
     }));
